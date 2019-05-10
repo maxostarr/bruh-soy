@@ -1,13 +1,56 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-  <title>Express</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="description" content="Bruh.">
+
+  <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <title>BRUH</title>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Webpage",
+      "url": "https://www.example.com",
+      "name": "My Webpage",
+      "headline": "webpage title",
+      "description": "Here is the description",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.example.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "The Publisher",
+        "logo": {
+          "url": "https://www.example.com/logo-blue.svg",
+          "width": 175,
+          "height": 60,
+          "@type": "ImageObject"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.example.com/leader.png",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  </script>
 </head>
 
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
+  <audio id="audioPlayer">
+    <source src="resources/bruh.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="bruhButton" onclick="getElementById('audioPlayer').play()">BRUH</div>
 </body>
 
 </html>

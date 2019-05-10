@@ -1,8 +1,22 @@
+html,
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  height: 100%;
 }
 
-a {
-  color: #00B7FF;
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+audio {
+  display: none
+}
+
+.bruhButton {
+  font-size: 10rem;
+  cursor: pointer;
 }
