@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <meta name="description" content="An art project on the subject of life after death">
-  <meta name="application-name" content="BRUH">
+  <meta name="description" content="Bruh.">
+
   <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -50,7 +50,14 @@
     <source src="resources/bruh.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <div class="bruhButton" onclick="getElementById('audioPlayer').play()">BRUH</div>
+  <div class="bruhButton" onclick="handleClick()">BRUH</div>
+  <script>
+    function handleClick(e) {
+      const player = document.getElementById('audioPlayer');
+                                   player.currentTime = 0;
+                                   player.play();
+    }
+  </script>
 </body>
 
 </html>
